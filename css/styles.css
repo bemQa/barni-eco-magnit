@@ -1792,6 +1792,7 @@ table td:nth-child(3) {
 
     .lk-wrapper {
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .lk-table-wrapper {
@@ -1839,5 +1840,7 @@ table td:nth-child(3) {
 }
 
 @media (max-width: 350px) {
-    
+    .lk-table table td:nth-child(5) {
+        min-width: 90px;
+    }
 }
