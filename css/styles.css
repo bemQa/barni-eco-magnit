@@ -851,6 +851,16 @@ footer .container {
     margin: 0 auto 10px;
 }
 
+.popup__title2 {
+    font-family: Odds;
+    font-size: 23px;
+    line-height: 26px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 auto 10px;
+}
+
 .popup__error {
     font-size: 12px;
     line-height: 1;
@@ -862,6 +872,7 @@ footer .container {
 .popup__desc {
     font-size: 14px;
     line-height: 16px;
+    color: #003595;
     margin: 0 auto 20px;
 }
 
@@ -1235,6 +1246,309 @@ span.error {
     margin: auto;
 }
 
+.profile-block {
+    position: relative;
+    text-align: center;
+    margin: 100px auto 30px;
+}
+
+.logout-link {
+    font-family: 'RotondaC';
+    font-size: 18px;
+    line-height: 1;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.profile-name {
+    max-width: 490px;
+    width: 100%;
+    margin: 0 auto 12px;
+    font-family: Odds;
+    font-size: 21px;
+    line-height: 25px;
+    color: #fff;
+}
+
+.profile-contacts {
+    margin-bottom: 10px;
+}
+
+.profile-contact {
+    font-family: 'RotondaC';
+    font-size: 18px;
+    line-height: 1;
+    color: #FFF236;
+}
+
+.profile-mail {
+    margin-bottom: 8px;
+}
+
+.table-wrapper {
+    max-width: 1160px;
+    width: 100%;
+    max-height: 420px;
+    margin: auto;
+    padding-right: 18px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table th {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1;
+    text-align: left;
+    color: #fff;
+    padding: 0 20px 10px 0;
+}
+
+table tbody {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1;
+    text-align: left;
+    color: #fff;
+}
+
+table td {
+    padding: 13px 20px 13px 0;
+    min-width: 190px;
+}
+
+table td:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 230px;
+}
+
+table td:nth-child(3) {
+   min-width: 140px;
+}
+
+.lk-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto 35px;
+}
+
+.lk-table-wrapper {
+    position: relative;
+    max-width: 520px;
+    width: 100%;
+    height: 520px;
+    padding: 25px 20px 20px;
+    background: rgb(0 53 149 / 60%);
+    border-radius: 30px;
+}
+
+.lk-announce {
+    position: relative;
+    max-width: 300px;
+    margin: 70px auto 100px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.lk-table-title {
+    font-family: Odds;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.lk-table {
+    max-width: 450px;
+    width: 100%;
+    max-height: 320px;
+    margin: 90px auto 0;
+}
+
+.lk-table th {
+    font-family: RotondaC;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.lk-table table td {
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    min-width: 90px;
+}
+
+.lk-table table td:nth-child(1) {
+    min-width: 60px;
+}
+
+.lk-table table td:nth-child(5) {
+    min-width: 120px;
+}
+
+.lk-table .check-preview {
+    width: 44px;
+    height: 44px;
+}
+
+.check-preview {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.check-preview img {
+    border-radius: 50px;
+}
+
+.check-preview.rejected::after {
+    content: '!';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 23px;
+    height: 23px;
+    margin: auto;
+    border-radius: 50px;
+    background: #CE2E25;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.rejected-link {
+    color: #fff;
+}
+
+.lk-prizes {
+    max-width: 480px;
+    width: 100%;
+    height: 450px;
+    margin: auto;
+}
+
+.lk-prizes .simplebar-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lk-prize {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 240px;
+    width: 100%;
+    margin: 15px auto;
+}
+
+.lk-prize-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 10px;
+}
+
+.lk-prize-img img {
+    position: absolute;
+    left: -100px;
+    right: -100px;
+    margin: auto;
+    width: 130px;
+}
+
+.lk-prize-popup-img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.lk-prize-name {
+    font-family: Odds;
+    font-size: 22px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.lk-prize-link {
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+}
+
+.popup-prize-name {
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.popup .select {
+    min-width: 115px;
+}
+
+.popup .select2-container--default .select2-selection--single .select2-selection__rendered,
+.popup .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.popup .select2-container--default .select2-results>.select2-results__options {
+    text-align: left;
+}
+
+.select-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-wrap .popup__input-text {
+    margin-left: 10px;
+}
+
+.iframe-wrap,
+.iframe-wrap iframe {
+    scrollbar-width: none;
+}
+
+.iframe-wrap {
+    height: 100%;
+    min-height: 380px;
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.iframe-wrap iframe {
+    height: 100vh;
+    max-height: 380px;
+    width: 100%;
+}
+
 @media (max-width: 1366px) {
     .inner-page::before {
         background-size: cover;
@@ -1248,6 +1562,10 @@ span.error {
 
     .menu-link {
         font-size: 14px;
+    }
+
+    .lk-table-wrapper {
+        max-width: 490px;
     }
 }
 
@@ -1296,8 +1614,10 @@ span.error {
     .logo-magnit {
         top: 0;
         left: 15px;
-        width: 59px;
-        height: 59px;
+        bottom: 0;
+        margin: auto;
+        width: 68px;
+        height: 58px;
         background: url(../img/logo-magnit-mob.svg) center no-repeat;
         background-size: contain;
         z-index: 11;
@@ -1422,7 +1742,7 @@ span.error {
 
     .inner-page {
         min-height: auto;
-        padding-bottom: 100px;
+        padding-bottom: 60px;
     }
 
     .inner-page::before {
@@ -1468,6 +1788,47 @@ span.error {
 
     .feedback-form {
         max-width: 290px;
+    }
+
+    .lk-wrapper {
+        flex-direction: column;
+    }
+
+    .lk-table-wrapper {
+        padding: 40px 10px 20px;
+    }
+
+    .lk-table-checks {
+        height: 420px;
+        order: -2;
+    }
+
+    .lk-table {
+        max-width: 300px;
+        max-height: 270px;
+        margin: 36px auto 0;
+    }
+
+    .lk-table th {
+        font-family: Odds;
+        font-size: 18px;
+        line-height: 1;
+        color: #FFF236;
+        padding-bottom: 20px;
+    }
+
+    .lk-table table td {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .lk-table-checks + .btn-wrapper {
+        margin: 30px auto;
+        order: -1;
+    }
+
+    .lk-prizes {
+        height: 435px;
     }
 }
 
