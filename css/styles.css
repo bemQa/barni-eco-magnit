@@ -1733,7 +1733,7 @@ table td:nth-child(3) {
 }
 
 .date-filter .select2.select2-container {
-    padding: 13px 10px 13px 35px;
+    padding: 13px 10px 13px 40px;
     background: #A1E2FF;
     border-radius: 30px;
 }
@@ -1751,8 +1751,8 @@ table td:nth-child(3) {
     top: 0;
     left: 15px;
     bottom: 0;
-    width: 18px;
-    height: 18px;
+    width: 25px;
+    height: 22px;
     margin: auto;
     background: url(../img/calendar-icon.svg) center no-repeat;
     background-size: contain;
@@ -1773,27 +1773,27 @@ table td:nth-child(3) {
 }
 
 .date-filter .select2-container--default .select2-selection--single .select2-selection__placeholder {
-    color: #fff;
-    font-size: 14px;
+    color: #003595;
+    font-size: 16px;
     font-weight: normal;
 }
 
 .date-filter .select2-container--default .select2-selection--single .select2-selection__rendered {
     padding-right: 0;
-    color: #fff;
-    font-size: 14px;
+    color: #003595;
+    font-size: 16px;
     font-weight: normal;
 }
 
 .date-filter .select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #fff;
+    color: #003595;
 }
 
 .date-filter .select2-container--default .select2-selection--single .select2-selection__arrow {
     top: 0;
     right: 15px;
-    width: 16px;
-    height: 11px;
+    width: 18px;
+    height: 9px;
     transition: all .2s linear;
 }
 
@@ -1804,8 +1804,8 @@ table td:nth-child(3) {
     right: 0;
     bottom: 0;
     border: none;
-    width: 16px;
-    height: 11px;
+    width: 18px;
+    height: 9px;
     background: url(../img/arrow-down-filter.svg) center no-repeat;
     background-size: contain;
     margin: auto;
@@ -1815,7 +1815,6 @@ table td:nth-child(3) {
     padding-top: 0;
     top: 0;
     background: #fff;
-    box-shadow: 2px 2px 2px rgba(104, 39, 0, 0.35);
     border: transparent;
     border-radius: 0;
     border-bottom-left-radius: 25px;
@@ -1827,9 +1826,9 @@ table td:nth-child(3) {
 .date-filter .select2-results__option {
     position: relative;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     height: 40px;
-    padding: 13px 10px 13px 44px;
+    padding: 13px 10px 13px 50px;
 }
 
 /*.date-filter .select2-results__option:not(:last-child)::after {
@@ -2256,6 +2255,10 @@ table td:nth-child(3) {
         margin-bottom: 110px;
     }
 
+    .winners-page::before {
+        top: 60px;
+    }
+
     .page-subtitle {
         font-size: 18px;
         line-height: 1;
@@ -2272,7 +2275,6 @@ table td:nth-child(3) {
     }
 
     .phone-filter {
-        max-width: 260px;
         margin-bottom: 10px;
     }
 
