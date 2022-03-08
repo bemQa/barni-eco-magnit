@@ -1694,6 +1694,256 @@ table td:nth-child(3) {
     color: #FFF236;
 }
 
+.winners-page::before {
+    top: 90px;
+}
+
+.page-subtitle {
+    position: relative;
+    font-family: Odds;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    max-width: 740px;
+    width: 100%;
+    margin: 100px auto 40px;
+}
+
+.date-filter {
+    position: relative;
+    max-width: 280px;
+    width: 100%;
+}
+
+.date-filter .select {
+    min-width: 180px;
+}
+
+.date-filter .select2-container--below {
+    z-index: 3;
+}
+
+.date-filter .select2.select2-container {
+    padding: 13px 10px 13px 35px;
+    background: #A1E2FF;
+    border-radius: 30px;
+}
+
+.date-filter .select2.select2-container--open {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.date-filter .select2.select2-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    bottom: 0;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    background: url(../img/calendar-icon.svg) center no-repeat;
+    background-size: contain;
+}
+
+.date-filter .select2-container .select2-selection--single {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 10px;
+    width: 100%;
+    height: 20px;
+    padding: 0 20px 0 10px;
+    border: 0;
+    border-bottom: 0;
+    box-shadow: none;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-right: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.date-filter .select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 0;
+    right: 15px;
+    width: 16px;
+    height: 11px;
+    transition: all .2s linear;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+    width: 16px;
+    height: 11px;
+    background: url(../img/arrow-down-filter.svg) center no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+.date-filter .select2-container--open .select2-dropdown--below {
+    padding-top: 0;
+    top: 0;
+    background: #fff;
+    box-shadow: 2px 2px 2px rgba(104, 39, 0, 0.35);
+    border: transparent;
+    border-radius: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.date-filter .select2-results__option {
+    position: relative;
+    font-weight: normal;
+    font-size: 14px;
+    height: 40px;
+    padding: 13px 10px 13px 44px;
+}
+
+/*.date-filter .select2-results__option:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed #1E402C;
+}*/
+
+.date-filter .select2-results__options {
+    color: #231F20;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.date-filter .select2-container--default .select2-results>.select2-results__options {
+    padding-top: 0;
+}
+
+.date-filter .select2-container--default .select2-results__option--highlighted[aria-selected],
+.date-filter .select2-container--default .select2-results__option[aria-selected=true] {
+    color: #231F20;
+}
+
+.phone-filter {
+    max-width: 280px;
+    margin: 0;
+}
+
+.phone-filter input:not([type="checkbox"]) {
+    font-size: 16px;
+    padding-left: 50px;
+    background: #A1E2FF;
+}
+
+.search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background: url(../img/search.svg) center no-repeat;
+    background-size: auto;
+    transition: all .2s linear;
+}
+
+.search:active {
+    box-shadow: none;
+}
+
+.winners {
+    position: relative;
+    max-width: 740px;
+    width: 100%;
+    min-height: 420px;
+    margin: auto;
+}
+
+.winners-table th {
+    font-family: Odds;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+}
+
+.winners-table tbody {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+}
+
+.prize-td {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    min-height: 60px;
+    padding-left: 60px;
+}
+
+.winners-prize {
+    position: absolute;
+    left: 0;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.winners-prize img {
+    position: absolute;
+    left: -50px;
+    right: -50px;
+    margin: auto;
+    width: 50px;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.winners-prize-info {
+    max-width: 205px;
+    width: 100%;
+}
+
 @media (max-width: 1366px) {
     .inner-page::before {
         background-size: cover;
@@ -2004,6 +2254,55 @@ table td:nth-child(3) {
 
     .product-row:nth-child(2) {
         margin-bottom: 110px;
+    }
+
+    .filters {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .date-filter {
+        max-width: 260px;
+        margin-bottom: 20px;
+    }
+
+    .phone-filter {
+        max-width: 260px;
+        margin-bottom: 10px;
+    }
+
+    .winners-table td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .prize-td {
+        display: flex;
+        max-width: 180px;
+        padding-right: 0;
+    }
+
+    .winners-prize {
+        margin-right: 5px;
+    }
+
+    .winners-prize-info {
+        max-width: 112px;
+    }
+
+    .winners-date {
+        font-size: 10px;
+        line-height: 14px;
+        color: #3A8240;
+        margin-bottom: 5px;
+    }
+
+    .winners-name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 180px;
+        margin: 0 auto 5px;
     }
 }
 
