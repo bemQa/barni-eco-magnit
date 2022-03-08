@@ -2256,13 +2256,18 @@ table td:nth-child(3) {
         margin-bottom: 110px;
     }
 
+    .page-subtitle {
+        font-size: 18px;
+        line-height: 1;
+        margin-top: 5px;
+    }
+
     .filters {
         flex-direction: column;
-        margin: 20px auto;
+        margin: 70px auto 40px;
     }
 
     .date-filter {
-        max-width: 260px;
         margin-bottom: 20px;
     }
 
@@ -2271,19 +2276,38 @@ table td:nth-child(3) {
         margin-bottom: 10px;
     }
 
+    .winners-table th {
+        color: #FFF236;
+    }
+
     .winners-table td {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        min-width: 160px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .winners-table td.mobile-visible {
+        display: table-cell;
     }
 
     .prize-td {
         display: flex;
+        align-items: center;
         max-width: 180px;
+        min-height: 88px;
+        padding-left: 68px;
         padding-right: 0;
     }
 
     .winners-prize {
+        width: 60px;
+        height: 60px;
         margin-right: 5px;
+    }
+
+    .winners-prize img {
+        width: 60px;
     }
 
     .winners-prize-info {
@@ -2291,18 +2315,20 @@ table td:nth-child(3) {
     }
 
     .winners-date {
-        font-size: 10px;
-        line-height: 14px;
-        color: #3A8240;
-        margin-bottom: 5px;
+        font-size: 18px;
+        line-height: 1;
+        opacity: 0.5;
+        margin-bottom: 8px;
     }
 
     .winners-name {
+        font-size: 18px;
+        line-height: 1;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 180px;
-        margin: 0 auto 5px;
+        margin: 0 0 8px;
     }
 }
 
@@ -2315,5 +2341,13 @@ table td:nth-child(3) {
 @media (max-width: 350px) {
     .lk-table table td:nth-child(5) {
         min-width: 90px;
+    }
+
+    .winners-table td {
+        min-width: 130px;
+    }
+
+    .winners-name {
+        max-width: 130px;
     }
 }
