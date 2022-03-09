@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('https://переделки.барни.рф/fonts/GothamPro-Medium.eot');
+    src: url('https://переделки.барни.рф/fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://переделки.барни.рф/fonts/GothamPro-Medium.woff2') format('woff2'),
+        url('https://переделки.барни.рф/fonts/GothamPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RotondaC';
+    src: url('https://переделки.барни.рф/RotondaC-Bold.eot');
+    src: url('https://переделки.барни.рф/RotondaC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://переделки.барни.рф/RotondaC-Bold.woff2') format('woff2'),
+        url('https://переделки.барни.рф/RotondaC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RotondaC';
+    src: url('https://переделки.барни.рф/RotondaC.eot');
+    src: url('https://переделки.барни.рф/RotondaC.eot?#iefix') format('embedded-opentype'),
+        url('https://переделки.барни.рф/RotondaC.woff2') format('woff2'),
+        url('https://переделки.барни.рф/RotondaC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Odds';
+    src: url('https://переделки.барни.рф/Odds-Regular.eot');
+    src: url('https://переделки.барни.рф/Odds-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://переделки.барни.рф/Odds-Regular.woff2') format('woff2'),
+        url('https://переделки.барни.рф/Odds-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Iskra CYR Md';
+    src: url('https://переделки.барни.рф/IskraCYRMd.eot');
+    src: url('https://переделки.барни.рф/IskraCYRMd.eot?#iefix') format('embedded-opentype'),
+        url('https://переделки.барни.рф/IskraCYRMd.woff2') format('woff2'),
+        url('https://переделки.барни.рф/IskraCYRMd.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+body {
+    font-family: 'Iskra CYR Md' !important;
+    font-weight: normal;
+    font-style: normal;
+    background-color: transparent !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    height: 100%;
+    color: #003595;
+}
+
+.container.uf-container.container--custom {
+    color: #003595;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    padding: 0;
+}
+
+@media screen and (max-width:320px) {
+    .container.uf-container.container--custom {
+        width: 260px;
+    }
+}
+
+.container.uf-container.container--custom::-webkit-scrollbar {
+    width: 0;
+}
+
+.container-tutorial__text {
+    font-family: 'Iskra CYR Md';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+.container-tutorial__text p {
+    margin-bottom: 20px;
+}
+
+.dropzone .dz-message {
+    font-weight: 300;
+}
+
+.dropzone.dropzone--custom.dz-clickable {
+    background-color: #fff;
+    border: 1px solid #003595;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.dropzone.dropzone--custom.dz-clickable.dz-started {
+    border: 1px solid #003595;
+}
+
+.dropzone .dz-preview.dz-image-preview {
+    display: block;
+    margin: 16px auto;
+    border-radius: 0;
+    border: 0;
+}
+
+@media screen and (max-width:768px) {
+    .dropzone .dz-preview.dz-image-preview {
+        width: 100px;
+    }
+}
+
+.dropzone .dz-preview .dz-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 0 !important;
+}
+
+.dropzone .dz-preview .dz-remove {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 0 !important;
+    font-weight: bold;
+    background-color: #E51435;
+    border-color: #E51435;
+    width: 23px;
+    height: 23px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 23px;
+    z-index: 21;
+    color: #fff;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.dropzone .dz-preview .dz-remove::before {
+    content: 'X';
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+.dropzone .dz-preview .dz-remove:hover {
+    background: #E51435, 90%;
+    text-decoration: none;
+}
+
+.uf-button-wrapper.button-wrapper--custom {
+    text-align: center
+}
+
+.uf-button-submit.button-submit--custom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    min-width: 240px;
+    height: 50px;
+    margin: auto;
+    padding: 16px 20px 14px;
+    background: #CE2E25;
+    font-family: Odds;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border-radius: 33px;
+    transition: all .2s linear;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.uf-button-submit.button-submit--custom:hover,
+.uf-button-submit.button-submit--custom:focus {
+    background: #b92921;
+}
+
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom {
+    margin: 20px 0;
+}
+
+.dropzone.dz-started .dz-message span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 30px;
+    margin: auto;
+    padding: 7px 10px;
+    background: transparent;
+    font-family: Odds;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #003595;
+    border: 1px solid #003595;
+    border-radius: 33px;
+    transition: all .2s linear;
+    outline: none;
+    cursor: pointer;
+}
+
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: auto;
+    font-family: Odds;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.dropzone.dz-started .dz-message span:hover {
+    opacity: .9;
+}
+
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button:hover {
+    text-decoration: none;
+}
+
+.uf-controls-wrapper {
+    position: relative;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.uf-controls-wrapper .form-control {
+    max-width: 260px;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px !important;
+    font-family: 'Iskra CYR Md';
+    font-size: 14px;
+    line-height: 1;
+    color: #003595;
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 33px;
+    transition: all .2s linear;
+    margin: 10px auto;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+.uf-controls-wrapper .form-control:focus {
+    border: 1px solid #003595;
+}
+
+.input-group.date {
+    /*overflow: hidden;*/
+    margin: 10px auto;
+    width: 100%;
+    min-width: 220px;
+    max-width: 260px;
+}
+
+.input-group.date input {
+    margin: 0;
+    min-width: 220px;
+}
+
+.input-group.date .input-group-addon {
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+    border: 1px solid #C4C4C4;
+    border-left: none;
+}
+
+.bootstrap-datetimepicker-widget {
+    z-index: 9999;
+    background: #fefefe;
+    color: #000;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    width: 17em;
+}
+
+.angular-uf-container.angular-uf-message p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #003595;
+    margin-bottom: 20px;
+}
+
+zxing-scanner {
+    border-color: #003595 !important;
+    border: 2px solid;
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto 20px !important;
+}
+
+app-root button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    min-width: 240px;
+    height: 50px;
+    margin: auto;
+    padding: 16px 20px 14px;
+    background: #CE2E25;
+    font-family: Odds;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border-radius: 33px;
+    transition: all .2s linear;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+app-root button:hover {
+    background: #b92921;
+}
+
+dropzone {
+    min-height: 156px;
+    border: 1px solid #003595;
+    background: #fff;
+    margin: 0 auto 25px;
+}
+
+app-root dropzone>.dropzone.dz-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    line-height: 14px;
+    color: #003595;
+    padding: 10px;
+}
+
+app-root dropzone>.dropzone.dz-wrapper .dz-message {
+    border: none;
+    background: none;
+    margin: 3rem 0;
+}
+
+app-root dropzone>.dropzone.dz-wrapper.dz-started .dz-message {
+    order: 1;
+    margin: 20px 0;
+}
+
+.angular-uf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+app-root select {
+    width: 200px;
+    height: 32px;
+    margin: 0 auto 20px;
+    padding: 0 20px 0 10px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+app-root .dropzone .dz-preview.dz-image-preview {
+    width: 100px;
+    height: 100px;
+}
+
+app-root .dropzone .dz-preview .dz-image {
+    width: 100px;
+    height: 100px;
+}
+
+.angular-uf-no-device-message,
+.angular-uf-device-check-err-message,
+.angular-uf-restrict-message {
+    text-align: center;
+}

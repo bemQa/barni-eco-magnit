@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'RotondaC';
-    src: url('../fonts/RotondaC-Bold.eot');
-    src: url('../fonts/RotondaC-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/RotondaC-Bold.woff2') format('woff2'),
-        url('../fonts/RotondaC-Bold.woff') format('woff');
+    src: url('RotondaC-Bold.eot');
+    src: url('RotondaC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('RotondaC-Bold.woff2') format('woff2'),
+        url('RotondaC-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'RotondaC';
-    src: url('../fonts/RotondaC.eot');
-    src: url('../fonts/RotondaC.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/RotondaC.woff2') format('woff2'),
-        url('../fonts/RotondaC.woff') format('woff');
+    src: url('RotondaC.eot');
+    src: url('RotondaC.eot?#iefix') format('embedded-opentype'),
+        url('RotondaC.woff2') format('woff2'),
+        url('RotondaC.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
