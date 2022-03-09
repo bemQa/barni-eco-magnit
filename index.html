@@ -78,10 +78,11 @@
 				<div class="container">
 					<div class="video-block">
 						<div class="page-subtitle">Посмотрите мультфильм <br class="mobile-visible">о мире переделок.*** <br>Пройдите тест, чтобы <br class="mobile-visible">проверить свои новые знания!</div>
-						<div class="youtube-wrapper">
-	                        <div class="youtube" data-embed="bakb02HsKD4">
-	                            <div class="play-button"></div>
-	                    	</div>
+	                    <div class="video-wrapper">
+	                    	<div id="video_holder">
+						        <div id="overlay"></div>
+						        <video id="video" tabindex="0" src="video/Барни_Spark_мультфильм_fin.mp4" poster="video/poster.jpg" preload="metadata" width="100%"></video>
+						    </div>
 	                    </div>
 						<div class="btn-wrapper">
 							<a href="#!" class="btn main-btn pop-op" data-popup="test">Пройти тест</a>
@@ -381,40 +382,44 @@
 							<a href="#!" class="btn test-btn disabled">Далее</a>
 						</div>
 					</form>
+					<div class="test-result" data-result="0">
+						<div class="test-question-text active">
+							У вас 0 правильных ответов, нужно посмотреть мультфильм еще раз, чтобы узнать о переработке чуть больше!
+						</div>
+						<div class="btn-wrapper">
+							<a href="#!" class="btn result-btn js-close-popup">Ок</a>
+						</div>
+					</div>
 					<div class="test-result" data-result="1">
-						<div class="test-question-title active">1 правильный ответ</div>
 						<div class="test-question-text active">
 							У вас 1 правильный ответ, нужно посмотреть мультфильм еще раз, чтобы узнать о переработке чуть больше!
 						</div>
 						<div class="btn-wrapper">
-							<a href="#!" class="btn result-btn js-close-popup">Понятно</a>
+							<a href="#!" class="btn result-btn js-close-popup">Ок</a>
 						</div>
 					</div>
 					<div class="test-result" data-result="2">
-						<div class="test-question-title active">2 правильных ответа</div>
 						<div class="test-question-text active">
-							Завидуем твоей энергии! Ты мечтатель - вечный студент: всё время мечтаешь стать быстрее, лучше, выше, сильнее. И всё это не ради конечного результата - ты получаешь не меньше удовольствия в процессе. Не теряй связь с близкими в этом полете и всё  получится! 
+							У вас целых 2 правильных ответа, теперь вы знаете о переработке чуть больше!
 						</div>
 						<div class="btn-wrapper">
-							<a href="#!" class="btn result-btn js-close-popup">Понятно</a>
+							<a href="#!" class="btn result-btn js-close-popup">Ок</a>
 						</div>
 					</div>
 					<div class="test-result" data-result="3">
-						<div class="test-question-title active">3 правильных ответа</div>
 						<div class="test-question-text active">
-							Как хорошо, что мир такой огромный – тебе есть о чем помечтать. Твое сердце стремится туда, куда зовут тебя мечты о путешествиях! Желаем счастливой и легкой дороги, пусть она приведет тебя к цели. А близкие и друзья обязательно поддержат, даже если они далеко.
+							Как здорово! У вас 3 правильных ответа, теперь вы знаете о переработке чуть больше!
 						</div>
 						<div class="btn-wrapper">
-							<a href="#!" class="btn result-btn js-close-popup">Понятно</a>
+							<a href="#!" class="btn result-btn js-close-popup">Ок</a>
 						</div>
 					</div>
 					<div class="test-result" data-result="4">
-						<div class="test-question-title active">4 правильных ответа</div>
 						<div class="test-question-text active">
-							У тебя всегда жизнь только начинается, а ты не боишься ее менять на любом этапе. Твоей  решительности хочется аплодировать. Ты всё правильно делаешь: полагайся только на себя и на свою интуицию, а вот от поддержки не отказывайся. Друзья, близкие и родные всегда помогут покорить любую вершину и карьерную лестницу.
+							Поздравляем, все ответы верные, теперь вы знаете о переработке чуть больше!
 						</div>
 						<div class="btn-wrapper">
-							<a href="#!" class="btn result-btn js-close-popup">Понятно</a>
+							<a href="#!" class="btn result-btn js-close-popup">Ок</a>
 						</div>
 					</div>
 	        	</div>

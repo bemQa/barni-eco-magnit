@@ -224,9 +224,6 @@ $(document).ready(function () {
                 $('.test-form').hide();
                 $('.test-result[data-result="'+ result_number +'"]').addClass('active');
             }
-
-            console.log('question_result:'+question_result);
-            console.log('answer_result:'+answer_result);
         });
 
         let question_area_result = 0;
@@ -262,6 +259,27 @@ $(document).ready(function () {
     function testBtnCheck() {
         if($('.question-field').find('input[type="radio"]').is(':checked')) {
             $('.test-btn').removeClass('disabled');
+        }
+    }
+
+    if($('#video').length) {
+        var overlay = document.getElementById('overlay');
+        var vid = document.getElementById('video');
+
+        if(overlay.addEventListener) {
+            overlay.addEventListener("click", play, false)
+        } else if(overlay.attachEvent) {
+            overlay.attachEvent("onclick", play)
+        }
+
+        function play() { 
+            if (vid.paused){
+                vid.play(); 
+                overlay.className = "o";
+            }else {
+                vid.pause(); 
+                overlay.className = "";
+            }
         }
     }
 
