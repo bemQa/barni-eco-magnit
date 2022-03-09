@@ -195,4 +195,103 @@ $(document).ready(function () {
         $('.tab-item.' + tab).addClass('active');
     });
 
+    function test() {
+        let question_number = $('.test-question-wrapper.active').data('question');
+        let question_result = 0;
+        let answer_result = 0;
+
+        $('.question-field').find('input[type="radio"]').on('click', function() {
+            testBtnCheck();
+        });
+
+        $('.test-btn').on('click', function() {
+            if(question_number <= 3) {
+                answer_result = parseInt($('.test-question-wrapper.active .question-checkbox input:checked').val());
+            } else {
+                answer_result = parseInt($('.test-question-wrapper-area.active .question-area-field').val());
+            }
+            question_result = question_result + answer_result;
+
+            $('.test-question-title[data-question="'+ question_number +'"]').removeClass('active');
+            $('.test-question-wrapper[data-question="'+ question_number +'"]').removeClass('active');
+            question_number = question_number+1;
+            $(this).addClass('disabled');
+            $('.test-question-title[data-question="'+ question_number +'"]').addClass('active');
+            $('.test-question-wrapper[data-question="'+ question_number +'"]').addClass('active');
+
+            if(question_number > 4) {
+                let result_number = question_result;
+                $('.test-form').hide();
+                $('.test-result[data-result="'+ result_number +'"]').addClass('active');
+            }
+
+            console.log('question_result:'+question_result);
+            console.log('answer_result:'+answer_result);
+        });
+
+        let question_area_result = 0;
+        let answer_area_result = 0;
+
+        $('.sort-element').on('click', function() {
+            $('.sort-element').removeClass('click');
+            $(this).addClass('click');
+
+            if($('.sort-element').hasClass('click')) {
+                $('.question-area').on('click', function() {
+                    let question_area = $(this).data('area');
+                    let question_area_click = $('.sort-element.click').data('area-click');
+                    $(this).append($('.sort-element.click'));
+                    $('.sort-element.click').removeClass('click');
+                    if(question_area == question_area_click) {
+                        answer_area_result = answer_area_result+1;
+                    }
+                    if(answer_area_result == 6) {
+                        $('.question-area-field').val('1');
+                        $('.test-btn').removeClass('disabled');
+                    }
+                    if($('.question-area-sort').find('.sort-element').length == 0) {
+                        $('.test-btn').removeClass('disabled');
+                    }
+                });
+            }
+        });
+    }
+
+    test();
+
+    function testBtnCheck() {
+        if($('.question-field').find('input[type="radio"]').is(':checked')) {
+            $('.test-btn').removeClass('disabled');
+        }
+    }
+
 });
+
+( function() {
+
+    var youtube = document.querySelectorAll( ".youtube" );
+    
+    for (var i = 0; i < youtube.length; i++) {
+        
+        var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/maxresdefault.jpg";
+        
+        var image = new Image();
+            image.src = source;
+            image.addEventListener( "load", function() {
+                youtube[ i ].appendChild( image );
+            }( i ) );
+    
+            youtube[i].addEventListener( "click", function() {
+
+                var iframe = document.createElement( "iframe" );
+
+                    iframe.setAttribute( "frameborder", "0" );
+                    iframe.setAttribute( "allowfullscreen", "" );
+                    iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1&enablejsapi=1" );
+
+                    this.innerHTML = "";
+                    this.appendChild( iframe );
+            } );    
+    };
+    
+} )();

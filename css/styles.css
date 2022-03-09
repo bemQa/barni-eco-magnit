@@ -993,7 +993,7 @@ footer .container {
 }
 
 .checkbox-text {
-    font-size: 14px;
+    font-size: 12px;
     color: #003595;
     display: inline-block;
     vertical-align: middle;
@@ -1943,6 +1943,451 @@ table td:nth-child(3) {
     width: 100%;
 }
 
+.kv-block {
+    position: relative;
+    margin-top: 140px;
+}
+
+.kv-block .container {
+    max-width: 1170px;
+    z-index: auto;
+}
+
+.barni {
+    position: absolute;
+    top: 0;
+    left: -700px;
+    right: 0;
+    margin: auto;
+    width: 426px;
+    height: 553px;
+    background: url(../img/barni.png) center no-repeat;
+    background-size: contain;
+}
+
+.kv {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 468px;
+    height: 235px;
+    background: url(../img/kv.png) center no-repeat;
+    background-size: contain;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    max-width: 338px;
+    width: 100%;
+    margin-left: auto;
+}
+
+.step {
+    position: relative;
+    max-width: 338px;
+    width: 100%;
+    padding-left: 78px;
+    margin-bottom: 20px;
+}
+
+.step:last-child {
+    margin-bottom: 0;
+}
+
+.step-num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 78px;
+    height: 80px;
+}
+
+.step-title {
+    font-family: Odds;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.step-subtitle {
+    font-family: Odds;
+    font-size: 19px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5px;
+}
+
+.step-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.step-subtext {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.magnit_card {
+    position: absolute;
+    top: 70px;
+    right: -40px;
+    width: 70px;
+}
+
+.step .btn-wrapper {
+    margin-top: 5px;
+}
+
+.arrow-down {
+    position: absolute;
+    top: 475px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 54px;
+    height: 54px;
+    background: url(../img/arrow-down.gif) center no-repeat;
+    background-size: contain;
+    z-index: 3;
+}
+
+.main-page {
+    margin-top: 0 !important;
+    padding-top: 210px;
+    padding-bottom: 260px;
+}
+
+.main-page::before {
+    background: url(../img/bg-main.png) center 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-page::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: -950px;
+    right: 0;
+    margin: auto;
+    width: 154px;
+    height: 160px;
+    background: url(../img/shild.png) center no-repeat;
+    background-size: contain;
+    transform: rotate(17deg);
+}
+
+.main-page .container {
+    max-width: 1200px;
+}
+
+.video-block {
+    margin-bottom: 200px;
+}
+
+.youtube-wrapper {
+    max-width: 1160px;
+    width: 100%;
+    margin: 40px auto 0;
+}
+
+.youtube {
+    background-color: #27C2EE;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.youtube img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.youtube .play-button {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 162px;
+    height: 162px;
+    background: url(../img/play.svg) center no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.youtube img,
+.youtube .play-button {
+    cursor: pointer;
+}
+
+.youtube img,
+.youtube iframe,
+.youtube .play-button {
+    position: absolute;
+}
+
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.youtube-wrapper + .btn-wrapper {
+    margin-top: -25px;
+}
+
+.main-btn {
+    max-width: 360px;
+    width: 100%;
+}
+
+.map-block .page-subtitle {
+    margin: 40px auto 50px;
+}
+
+.test-popup .popup__wrap {
+    max-width: 1000px;
+}
+
+.test-popup .popup__inner {
+    max-width: 970px;
+}
+
+.test-form {
+    margin: 15px auto 40px;
+}
+
+.test-question-title {
+    display: none;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.test-question-title.active {
+    display: block;
+}
+
+.test-question-wrapper {
+    display: none;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.test-question-wrapper.active {
+    display: flex;
+}
+
+.question-field {
+    max-width: 230px;
+    margin: 0 5px;
+}
+
+.question-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 170px;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.question-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #0F69B2;
+    border-radius: 30px;
+    z-index: 0;
+}
+
+.question-checkbox input:checked + .question-checkmark {
+    background: rgba(255, 255, 255, .5);
+}
+
+.question-checkbox input {
+    -webkit-appearance: none;
+    padding: 0;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.question-checkbox-text {
+    position: relative;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.question-checkbox input:checked ~ .question-checkbox-text {
+    color: #003595;
+}
+
+.test-question-wrapper-area {
+    position: relative;
+    max-width: 940px;
+    width: 100%;
+    height: 240px;
+    margin: 80px auto 60px;
+}
+
+.question-area {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.karton-area {
+    left: 0;
+}
+
+.karton-area::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    right: -50px;
+    bottom: 0;
+    margin: auto;
+    width: 270px;
+    height: 111px;
+    background: url(../img/test/karton.png) center no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.folga-area {
+    right: 0;
+}
+
+.folga-area::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    right: -50px;
+    bottom: 0;
+    margin: auto;
+    width: 216px;
+    height: 168px;
+    background: url(../img/test/folga.png) center no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.question-area-sort {
+
+}
+
+.sort-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.sort-element:hover,
+.sort-element.click {
+    filter: drop-shadow(5px -4px 0px #FFF236) drop-shadow(-5px 4px 0px #FFF236);
+}
+
+.egg_carton {
+    top: -250px;
+    left: -200px;
+    width: 136px;
+}
+
+.korobka {
+    top: -250px;
+    right: -170px;
+    width: 149px;
+}
+
+.plitka {
+    left: -200px;
+    width: 98px;
+}
+
+.lavka {
+    right: -200px;
+    width: 159px;
+}
+
+.luk {
+    bottom: -220px;
+    left: -200px;
+    width: 120px;
+}
+
+.bumaga {
+    bottom: -220px;
+    right: -200px;
+    width: 137px;
+}
+
+.test-result {
+    display: none;
+    margin: 30px auto 50px;
+}
+
+.test-result.active {
+    display: block;
+}
+
+.test-question-text {
+    max-width: 555px;
+    width: 100%;
+    margin: 40px auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 @media (max-width: 1366px) {
     .inner-page::before {
         background-size: cover;
@@ -1964,6 +2409,15 @@ table td:nth-child(3) {
 
     .product {
         margin: 20px auto;
+    }
+
+    .kv {
+        left: -120px;
+        width: 420px;
+    }
+
+    .steps {
+        margin-right: 30px;
     }
 }
 
@@ -2332,6 +2786,113 @@ table td:nth-child(3) {
         max-width: 180px;
         margin: 0 0 8px;
     }
+
+    .kv-block {
+        height: 160px;
+        margin-top: 100px;
+    }
+
+    .barni {
+        top: 100px;
+        left: -180px;
+        width: 208px;
+        height: 270px;
+    }
+
+    .kv {
+        top: 0;
+        left: 0;
+        right: -50px;
+        width: 255px;
+        height: 128px;
+    }
+
+    .steps {
+        position: relative;
+        top: 315px;
+        max-width: 330px;
+        margin: 0 auto;
+        z-index: 2;
+    }
+
+    .step {
+        max-width: 330px;
+        padding-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .step-num {
+        width: 47px;
+        height: 48px;
+    }
+
+    .step-title,
+    .step-subtitle,
+    .step-text,
+    .step-subtext {
+        text-align: left;
+    }
+
+    .magnit_card {
+        top: 60px;
+        right: 0;
+        width: 86px;
+    }
+
+    .step .btn-wrapper {
+        justify-content: flex-start;
+    }
+
+    .step .btn {
+        margin: 0;
+    }
+
+    .main-page {
+        padding-top: 500px;
+        padding-bottom: 130px;
+    }
+
+    .main-page::before {
+        background: url(../img/bg-main-mob.png) center 0 no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .main-page::after {
+        top: -20px;
+        left: 0;
+        right: -150px;
+        width: 174px;
+        height: 180px;
+        transform: rotate(5deg);
+    }
+
+    .main-page .container {
+        max-width: 375px;
+    }
+
+    .video-block {
+        margin-top: 50px;
+    }
+
+    .youtube-wrapper {
+        max-width: 350px;
+        margin: 20px auto;
+    }
+
+    .youtube .play-button {
+        width: 82px;
+        height: 82px;
+    }
+
+    .youtube-wrapper + .btn-wrapper {
+        margin: auto;
+    }
+    
+    .video-block .page-subtitle,
+    .map-block .page-subtitle {
+        font-size: 22px;
+        line-height: 28px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2351,5 +2912,20 @@ table td:nth-child(3) {
 
     .winners-name {
         max-width: 130px;
+    }
+
+    .step-title {
+        font-size: 33px;
+    }
+
+    .magnit_card {
+        top: 74px;
+        right: -10px;
+        width: 62px;
+    }
+
+    .video-block .page-subtitle,
+    .map-block .page-subtitle {
+        font-size: 19px;
     }
 }
