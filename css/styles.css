@@ -2109,6 +2109,8 @@ table td:nth-child(3) {
     background: url(../img/shild.png) center no-repeat;
     background-size: contain;
     transform: rotate(17deg);
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .main-page .container {
