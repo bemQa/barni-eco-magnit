@@ -249,6 +249,20 @@ $(document).ready(function () {
                     if($('.question-area-sort').find('.sort-element').length == 0) {
                         $('.test-btn').removeClass('disabled');
                     }
+
+                    $('.question-area .sort-element').one('click', function() {
+                        let question_area = $(this).parents('.question-area').data('area');
+                        let question_area_click = $(this).data('area-click');
+                        $('.question-area-sort').append($(this));
+                        $(this).removeClass('click');
+                        if(question_area == question_area_click) {
+                            answer_area_result = answer_area_result-1;
+                        }
+                        if(answer_area_result < 6) {
+                            $('.question-area-field').val('0');
+                            $('.test-btn').addClass('disabled');
+                        }
+                    });
                 });
             }
         });
