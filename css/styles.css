@@ -1975,6 +1975,16 @@ table td:nth-child(3) {
     background-size: contain;
 }
 
+.barni-anim {
+    position: absolute;
+    top: 0;
+    left: -700px;
+    right: 0;
+    margin: auto;
+    width: 426px;
+    height: 553px;
+}
+
 .kv {
     position: absolute;
     top: 50px;
@@ -2877,7 +2887,8 @@ table td:nth-child(3) {
         margin-top: 100px;
     }
 
-    .barni {
+    .barni,
+    .barni-anim {
         top: 100px;
         left: -180px;
         width: 208px;
