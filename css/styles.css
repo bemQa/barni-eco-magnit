@@ -1481,11 +1481,15 @@ table td:nth-child(3) {
     right: -100px;
     margin: auto;
     width: 130px;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .lk-prize-popup-img {
     width: 200px;
     margin: 0 auto;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .lk-prize-name {
@@ -1599,6 +1603,8 @@ table td:nth-child(3) {
     left: -100px;
     right: -100px;
     margin: auto;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .prize-name {
@@ -1635,6 +1641,8 @@ table td:nth-child(3) {
     height: 314px;
     background: url(../img/shild.png) center no-repeat;
     background-size: contain;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .products {
@@ -1677,6 +1685,8 @@ table td:nth-child(3) {
     align-items: center;
     justify-content: center;
     margin: 0 auto 10px;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .product-name {
