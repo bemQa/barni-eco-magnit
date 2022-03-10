@@ -1,40 +1,29 @@
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('https://переделки.барни.рф/fonts/GothamPro-Medium.eot');
-    src: url('https://переделки.барни.рф/fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
-        url('https://переделки.барни.рф/fonts/GothamPro-Medium.woff2') format('woff2'),
-        url('https://переделки.барни.рф/fonts/GothamPro-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'RotondaC';
-    src: url('https://переделки.барни.рф/RotondaC-Bold.eot');
-    src: url('https://переделки.барни.рф/RotondaC-Bold.eot?#iefix') format('embedded-opentype'),
-        url('https://переделки.барни.рф/RotondaC-Bold.woff2') format('woff2'),
-        url('https://переделки.барни.рф/RotondaC-Bold.woff') format('woff');
+    src: url('https://переделки.барни.рф/fonts/RotondaC-Bold.eot');
+    src: url('https://переделки.барни.рф/fonts/RotondaC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://переделки.барни.рф/fonts/RotondaC-Bold.woff2') format('woff2'),
+        url('https://переделки.барни.рф/fonts/RotondaC-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'RotondaC';
-    src: url('https://переделки.барни.рф/RotondaC.eot');
-    src: url('https://переделки.барни.рф/RotondaC.eot?#iefix') format('embedded-opentype'),
-        url('https://переделки.барни.рф/RotondaC.woff2') format('woff2'),
-        url('https://переделки.барни.рф/RotondaC.woff') format('woff');
+    src: url('https://переделки.барни.рф/fonts/RotondaC.eot');
+    src: url('https://переделки.барни.рф/fonts/RotondaC.eot?#iefix') format('embedded-opentype'),
+        url('https://переделки.барни.рф/fonts/RotondaC.woff2') format('woff2'),
+        url('https://переделки.барни.рф/fonts/RotondaC.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Odds';
-    src: url('https://переделки.барни.рф/Odds-Regular.eot');
-    src: url('https://переделки.барни.рф/Odds-Regular.eot?#iefix') format('embedded-opentype'),
-        url('https://переделки.барни.рф/Odds-Regular.woff2') format('woff2'),
-        url('https://переделки.барни.рф/Odds-Regular.woff') format('woff');
+    src: url('https://переделки.барни.рф/fonts/Odds-Regular.eot');
+    src: url('https://переделки.барни.рф/fonts/Odds-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://переделки.барни.рф/fonts/Odds-Regular.woff2') format('woff2'),
+        url('https://переделки.барни.рф/fonts/Odds-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -42,10 +31,10 @@
 
 @font-face {
     font-family: 'Iskra CYR Md';
-    src: url('https://переделки.барни.рф/IskraCYRMd.eot');
-    src: url('https://переделки.барни.рф/IskraCYRMd.eot?#iefix') format('embedded-opentype'),
-        url('https://переделки.барни.рф/IskraCYRMd.woff2') format('woff2'),
-        url('https://переделки.барни.рф/IskraCYRMd.woff') format('woff');
+    src: url('https://переделки.барни.рф/fonts/IskraCYRMd.eot');
+    src: url('https://переделки.барни.рф/fonts/IskraCYRMd.eot?#iefix') format('embedded-opentype'),
+        url('https://переделки.барни.рф/fonts/IskraCYRMd.woff2') format('woff2'),
+        url('https://переделки.барни.рф/fonts/IskraCYRMd.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
