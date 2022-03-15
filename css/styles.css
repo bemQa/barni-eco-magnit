@@ -1971,8 +1971,10 @@ table td:nth-child(3) {
     margin: auto;
     width: 426px;
     height: 553px;
-    background: url(../img/barni.png) center no-repeat;
+    background: url(../img/barni.webp) center no-repeat;
     background-size: contain;
+    image-rendering: optimizequality;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .barni-anim {
