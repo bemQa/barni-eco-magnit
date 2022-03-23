@@ -2487,6 +2487,95 @@ table td:nth-child(3) {
     color: #FFFFFF;
 }
 
+.promocode-block {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.promocode-title {
+    position: relative;
+    font-family: 'Odds';
+    font-size: 21px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 10px;
+    cursor: default;
+}
+
+.tooltip-trigger {
+    position: absolute;
+    top: -12px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/que-icon.svg) center no-repeat;
+    background-size: contain;
+    cursor: default;
+}
+
+.tooltip {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    width: 180px;
+    height: 90px;
+    padding: 17px 8px 15px 12px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Iskra CYR';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: none;
+    text-align: left;
+    color: #0A58A9;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(.5);
+    transition: all .2s linear;
+}
+
+.tooltip.active,
+.promocode-title:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.promocode-value {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #8DC5E2;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.promocode-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 1;
+    color: #fff;
+    width: 64px;
+    height: 14px;
+    padding: 1px 0 2px;
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+}
+
 @media (max-width: 1366px) {
     .inner-page::before {
         background-size: cover;
@@ -3143,6 +3232,36 @@ table td:nth-child(3) {
     .test-question-text {
         font-size: 22px;
         line-height: 28px;
+    }
+
+    .promocode-block {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 184px;
+        margin: 0 auto 25px;
+    }
+
+    .tooltip-trigger {
+        top: -14px;
+        width: 19px;
+        height: 19px;
+    }
+
+    .tooltip {
+        top: -50px;
+        left: 0;
+        margin: auto;
+    }
+
+    .promocode-btn {
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        border: none;
+        border-radius: 0;
+        background: url(../img/copy-icon.svg) center no-repeat;
+        background-size: contain;
     }
 }
 

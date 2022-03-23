@@ -42,6 +42,17 @@
 				<div class="container">
 					<div class="page-title">Личный кабинет</div>
 					<div class="profile-block">
+						<div class="promocode-block">
+							<div class="promocode-title">
+								ваш id:
+								<a href="#!" class="tooltip-trigger"></a>
+								<div class="tooltip">
+									Скопируйте и отправьте своим друзьям ссылку и получите бонусы
+								</div>
+							</div>
+							<div class="promocode-value">777888</div>
+							<button class="promocode-btn" onclick="navigator.clipboard.writeText(document.querySelector('.promocode-value').innerHTML.trim());">Скопировать</button>
+						</div>
 						<div class="profile-info">
 							<div class="profile-name">
 								Пантелеймон Владимирович Константинопольский
